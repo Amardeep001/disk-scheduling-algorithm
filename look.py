@@ -1,0 +1,7 @@
+print("enter the request queue:")
+rq=list(map(int,input().split()))
+rwh=int(input("enter the current positon of r/w head "))
+p=max(rq)
+k=(p-rwh)+p-min(rq)
+print("total no of track movements:",end=' ')
+print(k)
